@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* ===== Reset & Box Sizing ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* ===== Profile Card ===== */
+.links-card {
+  background-color: #ffffff;
+  padding: 40px 50px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.links-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Avatar ===== */
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #ffd180;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Headings & Text ===== */
+.links-card h1 {
+  margin: 12px 0 8px;
+  font-size: 28px;
+  color: #222;
+}
+
+.bio {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+/* ===== Links ===== */
+.links {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.links a {
+  display: block;
+  background-color: #e0f7fa;
+  color: #00796b;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.links a i {
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+/* Hover Effect */
+.links a:hover {
+  background: linear-gradient(135deg, #80deea, #26a69a);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: 40px;
+  font-size: 12px;
+  color: #575757;
+  text-align: center;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .links-card {
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .links-card h1 {
+    font-size: 24px;
+  }
+
+  .bio,
+  .tagline {
+    font-size: 14px;
+  }
+
+  .links a {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .avatar {
+    width: 140px;
+    height: 140px;
+  }
+}
